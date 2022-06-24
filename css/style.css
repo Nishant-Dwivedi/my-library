@@ -1,0 +1,229 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+
+
+:root {
+    --color-background--: skyblue;
+    --color-book--: white;
+    
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+* {
+    font-family: sans-serif;
+    margin: 0%;
+}
+
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 64px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template: auto/ repeat(auto-fit, 175px);
+    margin: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.book   {
+color: white;
+height: 200px;
+background-color: #00a3e4c9;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+display: grid;
+grid-template: 1fr 4fr 2fr 2fr/auto;
+align-items: center;
+justify-items: center;
+position: relative;
+padding: .75rem 0;
+}
+
+
+/* MARKED AS READ */
+.book.read {
+    background: #C9CCD3;
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
+}
+
+
+.edition {
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 100%;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+.book-name-main{
+    font-size: x-large;
+    text-align: center;
+}
+
+.book-name-sub {
+    font-size: medium;
+    text-align: center;
+}
+
+
+.options-container {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.65);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.options-container > ul {
+    list-style: none;
+    padding: 0;
+    font-size: larger;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+
+
+.options {
+   position: absolute;
+   bottom: 1px;
+   right: 4px;
+}
+.options > img{
+   height: 18px;
+   margin-right: 1.5px;   
+}
+
+.options > img:hover{
+    transform: scale(1.15);
+}
+
+
+
+
+
+/* ADD BOOK */
+
+.add-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.add-book:hover{
+    transform: scale(1.0125);
+}
+
+.add-book > img {
+   max-width: 75%;
+   height: auto;
+}
+
+
+
+/* FORM */
+
+#details {
+    visibility: hidden;
+    margin-inline: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; 
+    border-radius: 10px;
+    background-color: white; 
+}
+
+form {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .4rem;
+   
+}
+.form-row {
+    display: grid;
+    grid-template: auto / 1.5fr 8.5fr;
+    justify-items: flex-start;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+    padding: .35rem;
+    background-color: rgba(220, 220, 220, 0.384);
+} 
+
+#submitForm {
+    justify-self: flex-start;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    border: 1px solid silver;
+   
+}
+
+#submitForm:hover {
+   transform: scale(1.05);
+}
+
+
+input {
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid silver;
+    color: gray;
+    padding: .25rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* /* ADDITIONAL STYLES */

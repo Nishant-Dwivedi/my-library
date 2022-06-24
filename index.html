@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		
+		<title>My Library</title>
+		<script src="./js/main.js" defer></script>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+
+	</head>
+	<body>
+		<main>
+			<h1>My Library</h1>
+			<div id="booksContainer" class="container">			
+				<div class="book ">
+					<h4 class="edition">3rd Edition</h4>
+					<h2 class="book-name-main">The Lord of The Rings</h2>
+					<h3 class="book-name-sub">Return of the King</h3>
+					<h3 class="book-author">Tolkien</h3>		
+				</div>
+				
+				<div class="book ">
+					<h4 class="edition">2nd Edition</h4>
+					<h2 class="book-name-main">Harry Potter</h2>
+					<h3 class="book-name-sub">Deathly Hallows</h3>
+					<h3 class="book-author">J K Rowling</h3>		
+				</div>
+
+				<div id="addBook" class="add-book"><img src="./assets/more.png" alt="" srcset=""></div>
+			</div>
+		</main>
+
+
+		<div id="details">
+			<form action="#">
+				<div class="form-row">
+					<label for="book_title">Title :</label>
+					<input type="text" id="book_title">
+				</div>
+				<div class="form-row">
+					<label for="book_subtitle">Subtitle:</label>
+					<input type="text" id="book_subtitle">
+				</div>
+				<div class="form-row">
+					<label for="book_author">Author:</label>
+					<input type="text" id="book_author">
+				</div>
+				<div class="form-row">
+					<label for="book_pages">No of pages:</label>
+					<input type="text" id="book_pages">
+				</div>
+				<div class="form-row">
+					<label for="book_edition">Edition:</label>
+					<input type="number" id="book_edition">
+				</div>
+				<div class="form-row">
+					<label for="book_releaseDate">Release date:</label>
+					<input type="date" name="release_date" id="book_releaseDate">
+				</div>
+
+				<button id="submitForm" type="button" >Submit</button>
+			</form>
+		</div>
+		
+	</body>
+</html>
