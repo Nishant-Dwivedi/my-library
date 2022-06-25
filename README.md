@@ -1,10 +1,10 @@
 # my-library
-A basic library app to store your read books.
+A basic library app to store and manage your books.
 
 
 ### Links
 
-- Live Site URL: [Live Preview](https://app.netlify.com/sites/peppy-malasada-cceb6f/overview)
+- Live Site URL: [Live Preview](https://peppy-malasada-cceb6f.netlify.app/)
 
 
 ### Screenshots
