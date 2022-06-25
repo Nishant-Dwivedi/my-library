@@ -59,6 +59,7 @@ h1 {
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    justify-content: center;
 }
 
 .book   {
@@ -73,15 +74,22 @@ align-items: center;
 justify-items: center;
 position: relative;
 padding: .75rem 0;
+transition: transform .25s;
+
+}
+.book:hover {
+    transform: scale(1.0125);
 }
 
 
 /* MARKED AS READ */
 .book.read {
-    background: #C9CCD3;
-    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
-    background-blend-mode: normal, lighten, soft-light;
+    background: #c9ccd3;
+    background: linear-gradient(180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;  
+    
 }
+
 
 
 .edition {
@@ -158,6 +166,7 @@ padding: .75rem 0;
     background-blend-mode: normal, lighten, soft-light;
     border-radius: 10px;
     height: 200px;
+    transition: transform .25s;
 }
 
 .add-book:hover{
@@ -227,3 +236,28 @@ input {
 
 /******************************************
 /* /* ADDITIONAL STYLES */
+
+
+
+@media  screen and (max-width: 500px) {
+    .form-row {
+        grid-template: auto/ 3fr 7fr;
+    }
+
+    #submitForm{
+        justify-self: center;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 48px;
+    }
+    .add-book > img {
+        width: 60%;
+        height: auto;
+     }
+    
+}
