@@ -188,6 +188,7 @@ transition: transform .25s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; 
     border-radius: 10px;
     background-color: white; 
+    margin-bottom: 1rem;
 }
 
 form {
